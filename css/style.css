@@ -35,6 +35,8 @@ main {
 
 .password {
     display: flex;
+    align-items: center;
+    padding: 1rem 1.5rem;
 }
 
 .password .texto{
@@ -54,4 +56,164 @@ main {
     -moz-user-select: none;
     -ms-user-select:none;
     user-select: none
+}
+
+.password .acoes button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    opacity: 0.7;
+    transition: opacity 0.2s;
+}
+
+.indicador{
+    height: 10px;
+    background-color:#ddd;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.indicador .barra{
+    height: 10px;
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+
+    transition: all 0.2s;
+}
+
+.indicador .barra.completa {
+    border-top-right-radius: 0;
+}
+
+.indicador .barra.critico{
+    background-color: red;
+}
+
+.indicador .barra.atencao {
+    background-color: yellow;
+}
+
+.indicador .barra.segura{
+    background-color: green;
+}
+
+.customizar{
+    padding: 1rem 1.5rem;
+}
+
+.customizar .titulo2 {
+    border-bottom: 1px solid #f0f0f0;
+    font-size: 1.75rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    padding-bottom: 0.75rem ;
+}
+
+.customizar .acoes2{
+    display: flex;
+    gap: 3rem;
+    color: #828282;
+}
+
+.customizar .comprsenha{
+    flex: 1;
+}
+
+.customizar .comprsenha .slider{
+    appearance: none;
+    -webkit-appearance: none;
+    height: 10px;
+    background: #dddd;
+    outline: none;
+    border-radius: 8px;
+    width: 100%;
+    opacity: 0.7;
+    transition: opacity 0.2s;
+    margin-top: 1rem;
+}
+
+.customizar .comprsenha .slider:hover{
+    opacity: 1;
+}
+
+.customizar .comprsenha .slider::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 25px;
+    background: black;
+}
+
+.container{
+    display: block;
+    position: relative;
+    padding-left: 2rem;
+    margin-bottom: 1rem;
+    cursor: pointer;
+    -webkit-user-select:none;
+    user-select: auto;
+}
+
+.container input{
+    position: absolute;
+    height:0;
+    width: 0;
+    opacity:0;
+    cursor: pointer;
+} 
+
+.container .marcacao{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #dddd;
+    transition: all 0.2s;   
+}
+
+.container:hover input ~ .marcacao {
+    background-color: #cccccc;
+}
+
+.container input:checked ~ .marcacao {
+    background-color: black;
+}
+
+.container .marcacao:after{
+    content: "";
+    display: none;
+    position: absolute;
+    left: 9px;
+    top:5px;
+    width: 5px;
+    height: 13px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
+}
+
+.container input:checked ~ .marcacao::after{
+    display: block;
+}
+
+.bttcop{
+    text-align: center;
+}
+
+.bttcop button{
+    background-color: black;
+    font-size: 1.375rem;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    padding: 1rem 2rem;
+    transition: all 0.2s;
+}
+
+.bttcop button:hover{
+    background-color: rgba(0, 0, 0, 0.774);
 }

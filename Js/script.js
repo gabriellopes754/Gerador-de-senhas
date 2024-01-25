@@ -26,7 +26,7 @@ function copy() {
   navigator.clipboard.writeText(inputEl.value)
 }
 
-const copyBttEl = document.querySelector('#copy')
-copyBttEl.addEventListener("click", copy)
+document.querySelector('#copy').addEventListener("click", copy)
+document.querySelector('#copy2').addEventListener("click", copy)
 
 generatePassword()

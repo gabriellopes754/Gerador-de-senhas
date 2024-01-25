@@ -29,25 +29,56 @@
                     <input type="text" name="password" id="password"/>
                 </div>
                 <div class="acoes">
-                    <button id="copy2">C</button>
-                    <button id="renew">R</button>
+                    <button id="copy2"><img src="../gerador de senha/img/copiar.svg"  width="42"></button>
+                    <button id="atualizar"><img src="../gerador de senha/img/atualizar.svg" width="42"></button>
                 </div>
+                
+            </div>
+            <div class="indicador">
+                <div id="indicadorBarra" class="barra segura " style="width: 90%;"></div>
             </div>
         </section>
         
 
+       <section class="box customizar">
+        <h3 class="titulo2">Personalizar</h3>
+        <div class="acoes2">
+            <div class="comprsenha">
+                <p>tamanho <span id="comprsenha">16</span></p>
+                <input
+                type="range"
+                name="password-length"
+                id="password-length"
+                class="slider"
+                value="16"
+                min="4"
+                max="32"
+                />
+            </div>
+            <div class="config">
+                <label for="" class="container">
+                    <span class="tex">Maiusculas</span>
+                    <input type="checkbox" id="maiusculas" checked >
+                    <span class="marcacao"></span>
+                </label>
+                <label for="" class="container">
+                    <span class="tex">numeros</span>
+                    <input type="checkbox" id="numeros" checked >
+                    <span class="marcacao"></span>
+                </label>
+                <label for="" class="container">
+                    <span class="tex">Simbolos</span>
+                    <input type="checkbox" id="simbolos" checked >
+                    <span class="marcacao"></span>
+                </label>
+            </div>
+        </div>
+       </section>
+
        
-
-        <input
-        type="range"
-        name="password-length"
-        id="password-length"
-        value="16"
-        min="4"
-        max="32"
-        />
-
-        <button id="copy">Copiar senha</button>
+       <div class="bttcop">
+            <button id="copy">Copiar senha</button>
+        </div>
 
         <script src="../gerador de senha/Js/script.js"></script>
     </main>
