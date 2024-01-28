@@ -66,38 +66,6 @@ main {
     transition: opacity 0.2s;
 }
 
-.indicador{
-    height: 10px;
-    background-color:#ddd;
-    border-bottom-left-radius: 8px;
-    border-bottom-right-radius: 8px;
-}
-
-.indicador .barra{
-    height: 10px;
-    border-top-right-radius: 8px;
-    border-bottom-left-radius: 8px;
-    border-bottom-right-radius: 8px;
-
-    transition: all 0.2s;
-}
-
-.indicador .barra.completa {
-    border-top-right-radius: 0;
-}
-
-.indicador .barra.critico{
-    background-color: red;
-}
-
-.indicador .barra.atencao {
-    background-color: yellow;
-}
-
-.indicador .barra.segura{
-    background-color: green;
-}
-
 .customizar{
     padding: 1rem 1.5rem;
 }
@@ -153,13 +121,13 @@ main {
     margin-bottom: 1rem;
     cursor: pointer;
     -webkit-user-select:none;
-    user-select: auto;
+    user-select:none;
 }
 
 .container input{
     position: absolute;
-    height:0;
-    width: 0;
+    height:25px;
+    width: 100px;
     opacity:0;
     cursor: pointer;
 } 
