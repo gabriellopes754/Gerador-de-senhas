@@ -171,6 +171,7 @@ label{
 
 .container input:checked ~ .marcacao::after{
     display: block;
+    border-radius: 8px;
 }
 
 .bttcop{
