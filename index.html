@@ -3,15 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@600&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="reset.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="assets/" type="image/x-icon">
+    <title>Gerador de Senha</title>
 
     
 </head>
@@ -29,8 +28,8 @@
                     <input type="text" name="password" id="password"/>
                 </div>
                 <div class="acoes">
-                    <button id="copy2"><img src="copiar.svg"  width="42"></button>
-                    <button id="atualizar"><img src="atualizar.svg" width="42"></button>
+                    <button id="copy2"><img src="assets/copiar.svg"  width="42"></button>
+                    <button id="atualizar"><img src="assets/atualizar.svg" width="42"></button>
                 </div>
                 
             </div>
@@ -41,7 +40,7 @@
         <h3 class="titulo2">Personalizar</h3>
         <div class="acoes2">
             <div class="comprsenha">
-                <p>tamanho <span id="comprsenha2">16</span></p>
+                <p>Tamanho <span id="comprsenha2">16</span></p>
                 <input
                 type="range"
                 name="password-length"
@@ -54,17 +53,17 @@
             </div>
             <div class="config">
                 <label for="maiusculas" class="container">
-                    <span class="tex">Maiusculas</span>
+                    <span class="tex">Maiúsculas</span>
                     <input type="checkbox" id="maiusculas" checked >
                     <span class="marcacao"></span>
                 </label>
                 <label for="numeros" class="container">
-                    <span class="tex">numeros</span>
+                    <span class="tex">Números</span>
                     <input type="checkbox" id="numeros" checked >
                     <span class="marcacao"></span>
                 </label>
                 <label for="simbolos" class="container">
-                    <span class="tex">Simbolos</span>
+                    <span class="tex">Símbolos</span>
                     <input type="checkbox" id="simbolos" checked >
                     <span class="marcacao"></span>
                 </label>
@@ -74,10 +73,11 @@
 
        
        <div class="bttcop">
-            <button id="copy">Copiar senha</button>
+
+            <button id="copy"><img src="assets/copiar_branco.svg"  width="24"> Copiar Senha</button>
         </div>
 
-        <script src="script.js"></script>
+        <script src="js/script.js"></script>
     </main>
     
     
